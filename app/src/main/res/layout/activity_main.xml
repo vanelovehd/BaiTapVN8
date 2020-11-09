@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_nen"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="@dimen/_30sdp"
+            android:gravity="center"
+            android:id="@+id/tvTitle"
+            android:layout_marginTop="@dimen/_85sdp"/>
+
+        <LinearLayout
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llUser"
+            android:layout_below="@+id/tvTitle"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUser"
+                android:text="Tài khoản:"
+                android:textSize="@dimen/_20sdp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="text"
+                android:hint="Tài khoản"
+                android:textColor="#090808"
+                android:id="@+id/etUser"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llPass"
+            android:layout_below="@+id/llUser"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPass"
+                android:text="Mật khẩu:"
+                android:textSize="@dimen/_20sdp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="textPassword"
+                android:hint="Mật khẩu"
+                android:textColor="#090808"
+                android:id="@+id/etPass"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textSize="@dimen/_20sdp"
+            android:id="@+id/btnLogin"
+            android:layout_below="@+id/llPass"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</layout>

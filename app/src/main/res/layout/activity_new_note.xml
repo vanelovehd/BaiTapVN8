@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <RelativeLayout-->
+<!--            android:background="@drawable/bg_nen1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvCre"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Create New Note"-->
+<!--            android:textSize="@dimen/_20sdp"/>-->
+<!--            <Button-->
+<!--                android:layout_toRightOf="@+id/tvCre"-->
+<!--                android:id="@+id/btnSave"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="SAVE"-->
+<!--                android:textSize="@dimen/_15sdp"-->
+<!--                android:layout_marginLeft="@dimen/_48sdp"/>-->
+<!--            <Button-->
+<!--                android:layout_toEndOf="@+id/btnSave"-->
+<!--                android:id="@+id/btnMee"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="||"-->
+<!--                android:textSize="@dimen/_15sdp"-->
+<!--                />-->
+
+<!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:background="@drawable/bg_khungnen"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llTitle">
+            <EditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etTitle"
+                android:text="Title"
+                android:textSize="@dimen/_20sdp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/bg_khungnen"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_below="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/llDess">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:id="@+id/etDess"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind at me:"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:20"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:id="@+id/btnTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/09/2020"
+                android:textColor="@color/teal_200"
+                android:textSize="@dimen/_25sdp"
+                android:id="@+id/btnDate"
+                android:layout_marginLeft="@dimen/_45sdp"/>
+
+        </LinearLayout>
+       <LinearLayout
+           android:layout_margin="@dimen/_5sdp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Type:"
+               android:textSize="@dimen/_12sdp"/>
+
+           <Spinner
+               android:id="@+id/spnLuachon"
+               android:layout_width="@dimen/_100sdp"
+               android:layout_height="@dimen/_40sdp" />
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tags:"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android,VTC,FPT,Game"
+                android:id="@+id/tvMultichoice"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Week:"
+                android:textSize="@dimen/_12sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday,Sunday,Saturday"
+                android:id="@+id/tvWeek"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tune"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/btnPopMe"/>
+    </LinearLayout>
+
+
+</layout>
